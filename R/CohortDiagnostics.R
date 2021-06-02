@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of SkeletonCohortDiagnosticsStudy
+# This file is part of redCohort
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -86,7 +86,7 @@ execute <- function(connectionDetails,
     vocabularyDatabaseSchema = vocabularyDatabaseSchema,
     cohortTable = cohortTable,
     tempEmulationSchema = tempEmulationSchema,
-    packageName = "SkeletonCohortDiagnosticsStudy",
+    packageName = "redCohort",
     cohortToCreateFile = "settings/CohortsToCreate.csv",
     createCohortTable = TRUE,
     generateInclusionStats = TRUE,
@@ -97,7 +97,7 @@ execute <- function(connectionDetails,
   
   ParallelLogger::logInfo("Running study diagnostics")
   CohortDiagnostics::runCohortDiagnostics(
-    packageName = "SkeletonCohortDiagnosticsStudy",
+    packageName = "redCohort",
     connectionDetails = connectionDetails,
     cdmDatabaseSchema = cdmDatabaseSchema,
     vocabularyDatabaseSchema = vocabularyDatabaseSchema,

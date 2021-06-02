@@ -5,7 +5,7 @@ source(Sys.getenv("startUpScriptLocation"))
 connectionSpecifications <- cdmSources %>% dplyr::filter(sequence == 1) %>% dplyr::filter(database ==
                                                                                             "truven_ccae")
 
-library(SkeletonCohortDiagnosticsStudy)
+library(redCohort)
 
 # The folder where the study intermediate and result files will be written:
 outputFolder <-
@@ -40,7 +40,7 @@ cohortTable <-
         paste0("s",
                connectionSpecifications$sourceId,
                "_",
-               "SkeletonCohortDiagnosticsStudy")
+               "redCohort")
 
 dataSouceInformation <- getDataSourceInformation(connectionDetails = connectionDetails,
                                                  cdmDatabaseSchema = cdmDatabaseSchema,
@@ -66,7 +66,7 @@ CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = outputFolder)
 # Upload the results to the OHDSI SFTP server:
 privateKeyFileName <- ""
 userName <- ""
-SkeletonCohortDiagnosticsStudy::uploadResults(outputFolder, privateKeyFileName, userName)
+redCohort::uploadResults(outputFolder, privateKeyFileName, userName)
 
 
 # connectionDetailsToUpload <-

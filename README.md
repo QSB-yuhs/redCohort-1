@@ -26,13 +26,13 @@ How to run
 3. Once installed, you can execute the study by modifying and using the code below. For your convenience, this code is also provided under `extras/CodeToRun.R`:
 
 	```r
-	library(SkeletonCohortDiagnosticsStudy)
+	library(redCohort)
 	
 	# Maximum number of cores to be used:
 	maxCores <- parallel::detectCores()
 	
 	# The folder where the study intermediate and result files will be written:
-	outputFolder <- "c:/SkeletonCohortDiagnosticsStudy"
+	outputFolder <- "c:/redCohort"
 	
 	# Details for connecting to the server:
 	# See ?DatabaseConnector::createConnectionDetails for help
@@ -90,11 +90,11 @@ How to run
 
 License
 =======
-The SkeletonCohortDiagnosticsStudy package is licensed under Apache License 2.0
+The redCohort package is licensed under Apache License 2.0
 
 Development
 ===========
-SkeletonCohortDiagnosticsStudy was developed in ATLAS and R Studio.
+redCohort was developed in ATLAS and R Studio.
 
 ### Development status
 

@@ -1,15 +1,15 @@
 {
-	"skeletonType": "CohortDiagnosticsStudy",
+	"skeletonType": "redCohort",
 	"skeletonVersion": "v0.0.1",
 	"requiredHydraVersion": "v0.0.1",
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "SkeletonCohortDiagnosticsStudy"
+		"find": "redCohort"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "SkeletonCohortDiagnosticsStudy"
+		"find": "redCohort"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",

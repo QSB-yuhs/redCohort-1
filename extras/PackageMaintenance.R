@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of SkeletonCohortDiagnosticsStudy
+# This file is part of redCohort
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 # Format and check code ---------------------------------------------------
 # OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("SkeletonCohortDiagnosticsStudy")
+OhdsiRTools::checkUsagePackage("redCohort")
 OhdsiRTools::updateCopyrightYearFolder()
 
 # Create manual -----------------------------------------------------------
@@ -24,7 +24,7 @@ unlink("extras/UsingSkeletonPackage.pdf")
 shell("R CMD Rd2pdf ./ --output=extras/UsingSkeletonPackage.pdf")
 
 # Store environment in which the study was executed -----------------------
-# OhdsiRTools::createRenvLockFile(rootPackage = "SkeletonCohortDiagnosticsStudy", 
+# OhdsiRTools::createRenvLockFile(rootPackage = "redCohort", 
 #                                 additionalRequiredPackages = c('keyring', "checkmate","DatabaseConnector","clock","dplyr","DT",
 #                                                                "ggplot2","ggiraph","gtable","htmltools","lubridate",
 #                                                                "pool","purrr","scales","shiny","shinydashboard","shinyWidgets",

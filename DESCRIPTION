@@ -1,9 +1,9 @@
-Package: SkeletonCohortDiagnosticsStudy
+Package: redCohort
 Type: Package
 Title: A Study Package for Generating Cohort Diagnostics
 Version: 0.0.1
-Author: Gowtham Rao [aut, cre]
-Maintainer: Gowtham Rao <rao@ohdsi.org>
+Author: Kyuseop Kim [aut, cre]
+Maintainer: Kyuseop Kim <qsb0919@yuhs.ac>
 Description: A package that generates cohort diagnostics for cohort definitions included in the package.
 Imports:
 	CohortDiagnostics (>= 2.1.0),
